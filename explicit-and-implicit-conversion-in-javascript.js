@@ -19,14 +19,38 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+/*let result = "5" - 2;*/
+let result = Number("5") - 2;
 console.log("The result is: " + result);
-
+/*
 let isValid = Boolean("false");
 if (isValid) {
     console.log("This is valid!");
-}
+}  */
 
-let age = "25";
-let totalAge = age + 5;
+let isvalid = "false";
+if(isvalid === "true") {
+  console.log("This is Valid!");
+}
+let age = "25"; 
+/* age is declared as srting so we needto convert into number */
+
+let totalAge =Number(age)  + 5;
 console.log("Total Age: " + totalAge);
+/*  Examples for Implicit and Explicit conversions 
+      Explicit Conversions:      */
+      let name = 2345 ;
+console.log(name);
+let change = String(name);
+console.log(" The name is converted into string which is declared as number: " );
+console.log(name);
+console.log(typeof name);
+let city = "Ofallon";
+console.log(Boolean(city));
+let zipCode = 0 ;
+console.log(Boolean(zipCode));
+let value = "This is" + 10;
+console.log(value);
+
+
+
